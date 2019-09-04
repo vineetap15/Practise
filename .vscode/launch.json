@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimeNumber",
+            "request": "launch",
+            "mainClass": "app.PrimeNumber",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrangeList",
+            "request": "launch",
+            "mainClass": "app.ArrangeList",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringReverse",
+            "request": "launch",
+            "mainClass": "app.StringReverse",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "StringReverse",
+            "console": "integratedTerminal"
+        }
+    ]
+}
