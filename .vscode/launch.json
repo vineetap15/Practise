@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ListProductsSecondWay",
+            "request": "launch",
+            "mainClass": "app.ListProductsSecondWay",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ListProducts",
             "request": "launch",
             "mainClass": "app.ListProducts",
