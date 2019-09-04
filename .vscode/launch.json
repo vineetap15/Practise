@@ -31,6 +31,16 @@
             "request": "launch",
             "mainClass": "StringReverse",
             "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "ListProducts",
+            "console": "integratedTerminal"
         }
+
+
+        
     ]
 }
