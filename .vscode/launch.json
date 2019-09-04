@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ListProducts",
+            "request": "launch",
+            "mainClass": "app.ListProducts",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - PrimeNumber",
             "request": "launch",
             "mainClass": "app.PrimeNumber",
@@ -39,8 +46,5 @@
             "mainClass": "ListProducts",
             "console": "integratedTerminal"
         }
-
-
-        
     ]
 }

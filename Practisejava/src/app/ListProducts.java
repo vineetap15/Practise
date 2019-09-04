@@ -3,8 +3,11 @@ package app;
 import java.util.ArrayList;
 import java.util.List;
 
+
+//Write a Java program to replace each number in a list of [7,4,2,35,1900] 
+//with the product of the remaining numbers in the list
 public class ListProducts {
-	int zero=0,one=0;
+	List<Integer> finallist = new ArrayList<Integer>();
 
 	public void init(){
 		List<Integer> list = new ArrayList<Integer>();
@@ -15,36 +18,49 @@ public class ListProducts {
 		list.add(1900);
 		
 		
-		System.out.println("old list is: " +list);
-		System.out.println("New list is: " +newList(list));
+        System.out.println("old list is: " +list);
+        newList(list);
+		System.out.println("Final list is: " +getFinalList());
 	}
 	
 	
-	public List newList(List l){
+	public void newList(List<Integer> l){
 		List<Integer> list1 = new ArrayList<Integer>();
-		int size =l.size() ;
-		 	for(int i =0;i<size;i++){
-		 		
-		 		if(l.get(i).equals(0)){
-		 			zero++;
-		 		}
-		 		else{
-		 			one++;
-		 		}
-		 		
-		 	}
-		 	for(int i=0;i<zero;i++)
-		 		list1.add(0);
-		 	for(int i=0;i<one;i++)
-		 		list1.add(1);
-		
-		return list1;
-	}
+        int size =l.size() ;
+        int e;
+        int j=0;
+        System.out.println("size---" +size);
+
+		 	for(int i =0;j<size;j++){
+                System.out.println("list1---" +l);
+
+                 e=l.get(i);
+                 l.remove(i);
+                 setFinalList(l);
+                 l.add(e);
+             }
+             //System.out.println("list1---" +l);
+
+		    }
+    
+    public void setFinalList(List<Integer> l){
+        int num=1;
+        for(int i=0;i<l.size();i++){
+            num = num * l.get(i);
+            System.out.println("num---" +num);
+        }
+        finallist.add(num);
+        System.out.println("final list====" +finallist);
+
+    }
+
+    public List<Integer> getFinalList(){
+        return finallist;
+    }
 
 	public static void main(String[] args) {
 		ListProducts list = new ListProducts();
         list.init();
 	}
-
 
 }
