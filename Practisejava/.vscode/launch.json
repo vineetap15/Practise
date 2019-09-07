@@ -17,6 +17,13 @@
             "request": "launch",
             "mainClass": "src.app.ArrangeList",
             "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "PrefixSuffixString",
+            "console": "integratedTerminal"
         }
     ]
 }
