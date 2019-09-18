@@ -1,8 +1,21 @@
 package app;
 
+import java.util.Scanner;
+
 public class StringReverse {
 	
 	String str;
+
+	public void init(){
+        String str;  
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        str = s.nextLine();
+        System.out.println("Entered String is : " +str);
+       
+		System.out.println("Reverse of the string " +str+ " is: " +reverseString(str));
+		
+    }
 	
 	public String reverseString(String str){
 		char[] chr= str.toCharArray();
@@ -25,7 +38,7 @@ public class StringReverse {
 	
 	public static void main(String[] args) {
 		StringReverse rev = new StringReverse();
-	    System.out.println("The reverse of the string is:  "+ rev.reverseString("reverse"));
+	    rev.init();
 
 	    }
 

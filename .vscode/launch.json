@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LinkedListReverse",
+            "request": "launch",
+            "mainClass": "app.LinkedListReverse",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Stack",
+            "request": "launch",
+            "mainClass": "app.Stack",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LinkedList",
+            "request": "launch",
+            "mainClass": "app.LinkedList",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimeNumberNew",
+            "request": "launch",
+            "mainClass": "app.PrimeNumberNew",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxMinNumber",
+            "request": "launch",
+            "mainClass": "app.MaxMinNumber",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DuplicateCharacter",
+            "request": "launch",
+            "mainClass": "app.DuplicateCharacter",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DuplicateCharacterNew",
+            "request": "launch",
+            "mainClass": "app.DuplicateCharacterNew",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrangeListNew",
+            "request": "launch",
+            "mainClass": "app.ArrangeListNew",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - PrefixSuffixString",
             "request": "launch",
             "mainClass": "app.PrefixSuffixString",
@@ -46,7 +102,5 @@
             "mainClass": "PrefixSuffixString",
             "console": "integratedTerminal"
         }
-
-        
     ]
 }

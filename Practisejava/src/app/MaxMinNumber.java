@@ -1,8 +1,29 @@
 package app;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class MaxMinNumber {
 	int max=0,min=0;
-	
-	
+
+	public void init(){
+        int num=0;  
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter no. of element you want to enter: ");
+        num = s.nextInt();
+        int arr[] = new int[num];
+        System.out.println("Enter the array " +num+ " items: ");
+        for(int i=0;i<num;i++){
+            
+            arr[i] = s.nextInt();
+            
+        }
+        System.out.println("Array items: " +Arrays.toString(arr));
+
+		System.out.println("Max no is:  " +maxNumber(arr));
+	    System.out.println("Min no is:  " +minNumber(arr));
+        
+    }
 	
 	public int maxNumber(int[] number){
 		int size = number.length-1;
@@ -32,12 +53,11 @@ public class MaxMinNumber {
 		
 	}
 	public static void main(String[] args) {
-		int[] number ={1012,1,123,56,234,90,2,1,5,-2,-55,589};
-		MaxMinNumber num = new MaxMinNumber();
+		
+		MaxMinNumber mn = new MaxMinNumber();
+		mn.init();
 	     
-	    System.out.println("Max no is:  " +num.maxNumber(number));
-	    System.out.println("Min no is:  " +num.minNumber(number));
-
+	    
 	    }
 
 }
