@@ -1,5 +1,6 @@
 package app;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 class Node{
@@ -82,13 +83,32 @@ public class LinkedListReverse {
         
     }
 
+    public boolean detectLoop(LinkedListReverse l){
+        Node node = l.head;
+        HashSet<Node> h = new HashSet<Node>(); 
+        while(node!=null){
+            if(h.contains(node))
+            return true;
+
+            h.add(node);
+            node = node.next;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         LinkedListReverse l = new LinkedListReverse();
         l.insertNode(l,3);
         l.insertNode(l,4);
         l.insertNode(l,1);
+        l.insertNode(l,10);
         l.getList(l);
         l.reverse(l);
         l.getList(l);
+        l.head.next.next.next.next= l.head.next; 
+        if (l.detectLoop(l)) 
+            System.out.println("Loop found"); 
+        else
+            System.out.println("No Loop");
 }
 }
