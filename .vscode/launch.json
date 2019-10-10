@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RemoveNthNode",
+            "request": "launch",
+            "mainClass": "app.RemoveNthNode",
+            "projectName": "Practisejava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LinkedListReverse",
             "request": "launch",
             "mainClass": "app.LinkedListReverse",
